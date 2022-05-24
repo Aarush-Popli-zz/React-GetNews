@@ -27,7 +27,7 @@ const News = (props) => {
     useEffect(() => {
         document.title = `Get News | ${props.category}`;
         updateNews();
-        // enlist-disable-next-line
+        // eslint-disable-next-line
     }, [])
 
     // handlePrevClick = async()=>{
