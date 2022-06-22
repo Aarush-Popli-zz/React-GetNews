@@ -56,8 +56,6 @@ const News = (props) => {
         <div className='container my-3'>
             <h1 className='text-center mb-3' style={{marginTop: '70px'}}>Top {props.category} Headlines</h1>
             {loading && <Spinner />}
-            {console.log(articles.length)}
-            {console.log(totalResults)}
             <InfiniteScroll
                 dataLength={articles.length}
                 next={fetchMoreData}
